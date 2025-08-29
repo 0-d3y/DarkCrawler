@@ -21,7 +21,7 @@ git_branch() {
 
 # Set prompt
 if [ "$(id -u)" -eq 0 ]; then
-  PS1="${BOLD}${RED}╔═[${RED}\u@Mr.SaMi${RESET}${RED}]${RESET} ~ ${BOLD}${BLUE}[ \w ]${RESET} \n${BOLD}${RED}╚═> ${RESET}"
+  PS1="${BOLD}${RED}╔═[${RED}\u${GREEN}@${RED}Mr.SaMi${RESET}${RED}]${RESET} ~ ${BOLD}${BLUE}[ \w ]${RESET} \n${BOLD}${RED}╚═> ${RESET}"
 else
   PS1="${BOLD}${GREEN}\u@\h${RESET}:${BOLD}${BLUE}\w${RESET} \$(git_branch)\n${BOLD}${CYAN}=> ${RESET}"
 fi
